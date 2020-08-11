@@ -71,5 +71,6 @@ def winner(board)
   if winningcombo == nil
     return nil
   else
-  return board[winningcombo[0]]
+    return board[winningcombo[0]]
+  end
 end
