@@ -70,6 +70,4 @@ def winner?(board)
   puts winningcombo[0]
 end
 
-puts winner?(wonboard) #false
-
-
+puts winner?(wonboard) 
