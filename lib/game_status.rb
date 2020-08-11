@@ -65,8 +65,8 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   #ex: if winningcombo is [2,4,6], board[winningcombo[0]] = board[2] = either X or O
-  winningcombo= won?(board)
+  winningcombo = won?(board)
   return board[winningcombo[0]]
 end
