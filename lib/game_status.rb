@@ -42,7 +42,7 @@ end
 def draw?(board)
   if won?(board) == nil && full?(board)
     return true
-  elsif won?(board) == nil && !full?(board) 
+  elsif won?(board) == nil && !full?(board)
     return false
   else
     return false
@@ -55,3 +55,19 @@ wonboard = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 puts draw?(incomplete_board) #=> false
 puts draw?(drawboard) #true
 puts draw?(wonboard) #false
+
+
+def over?(board)
+  if draw?(board) || won?(board) || full?(board)
+    return true
+  else
+    return false
+  end
+end
+
+drawboard = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+incomplete_board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
+wonboard = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
+puts over?(incomplete_board) #=> false
+puts over?(drawboard) #true
+puts over?(wonboard) #false
