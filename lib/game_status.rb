@@ -64,3 +64,12 @@ def over?(board)
     return false
   end
 end
+
+def winner?(board)
+  winningcombo= won?(board)
+  puts winningcombo[0]
+end
+
+puts winner?(wonboard) #false
+
+
