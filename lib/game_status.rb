@@ -70,5 +70,6 @@ def winner?(board)
   winningcombo= won?(board)
   puts board[winningcombo[0]]
 end
+wonboard = [" ", "", "X", " ", "X", " ", "X", " ", " "]
 
-puts winner?(wonboard) 
+puts winner?(wonboard)
