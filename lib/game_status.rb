@@ -64,10 +64,3 @@ def over?(board)
     return false
   end
 end
-
-drawboard = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-incomplete_board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
-wonboard = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
-puts over?(incomplete_board) #=> false
-puts over?(drawboard) #true
-puts over?(wonboard) #false
