@@ -68,8 +68,5 @@ end
 def winner?(board)
   #ex: if winningcombo is [2,4,6], board[winningcombo[0]] = board[2] = either X or O
   winningcombo= won?(board)
-  puts board[winningcombo[0]]
+  return board[winningcombo[0]]
 end
-wonboard = [" ", "", "O", " ", "O", " ", "O", " ", " "]
-
-puts winner?(wonboard)
