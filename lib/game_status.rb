@@ -68,5 +68,8 @@ end
 def winner(board)
   #ex: if winningcombo is [2,4,6], board[winningcombo[0]] = board[2] = either X or O
   winningcombo = won?(board)
+  if winningcombo == nil
+    return nil
+  else
   return board[winningcombo[0]]
 end
